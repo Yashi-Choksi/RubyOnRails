@@ -1,0 +1,364 @@
+Started GET "/" for 127.0.0.1 at 2024-02-19 14:30:43 -0500
+  [1m[35m (38.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/railties-7.1.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/railties-7.1.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 3.2ms | Allocations: 578)
+Completed 200 OK in 554ms (Views: 117.8ms | ActiveRecord: 0.0ms | Allocations: 10559)
+
+
+Started GET "/countries/index" for 127.0.0.1 at 2024-02-19 16:03:50 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CountriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering countries/index.html.erb within layouts/application
+  Rendered countries/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 212)
+  Rendered layout layouts/application.html.erb (Duration: 1896.5ms | Allocations: 94869)
+Completed 500 Internal Server Error in 2329ms (ActiveRecord: 0.0ms | Allocations: 101844)
+
+
+  
+ActionView::Template::Error (Permission denied @ rb_file_s_rename - (E:/McMaster/SEP_759/Assignment3/MyFirstApp_Yashi/tmp/cache/assets/sprockets/v4.0.0/0x/0xdECZeOZ1Z3WiTFKVpV9A-76yDr8zfHb_zuvP6JMMM.cache.22140.20648.778957, E:/McMaster/SEP_759/Assignment3/MyFirstApp_Yashi/tmp/cache/assets/sprockets/v4.0.0/0x/0xdECZeOZ1Z3WiTFKVpV9A-76yDr8zfHb_zuvP6JMMM.cache)):
+  
+sprockets (4.2.1) lib/sprockets/path_utils.rb:362:in `rename'
+sprockets (4.2.1) lib/sprockets/path_utils.rb:362:in `atomic_write'
+sprockets (4.2.1) lib/sprockets/cache/file_store.rb:112:in `set'
+sprockets (4.2.1) lib/sprockets/cache.rb:227:in `set'
+sprockets (4.2.1) lib/sprockets/cache.rb:143:in `set'
+sprockets (4.2.1) lib/sprockets/loader.rb:265:in `store_asset'
+sprockets (4.2.1) lib/sprockets/loader.rb:228:in `load_from_unloaded'
+sprockets (4.2.1) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.2.1) lib/sprockets/loader.rb:339:in `fetch_asset_from_dependency_cache'
+sprockets (4.2.1) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.2.1) lib/sprockets/cached_environment.rb:44:in `block in load'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/map.rb:207:in `block in fetch_or_store'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/map.rb:187:in `fetch'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/map.rb:206:in `fetch_or_store'
+sprockets (4.2.1) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.2.1) lib/sprockets/base.rb:81:in `find_asset'
+sprockets (4.2.1) lib/sprockets/base.rb:88:in `find_all_linked_assets'
+sprockets (4.2.1) lib/sprockets/manifest.rb:125:in `each'
+sprockets (4.2.1) lib/sprockets/manifest.rb:125:in `to_a'
+sprockets (4.2.1) lib/sprockets/manifest.rb:125:in `block (2 levels) in find'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:24:in `block in execute'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in `block in synchronize'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in `synchronize'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in `synchronize'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:22:in `execute'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/promise.rb:564:in `block in realize'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:359:in `run_task'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:350:in `block (3 levels) in create_worker'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:341:in `loop'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:341:in `block (2 levels) in create_worker'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:340:in `catch'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:340:in `block in create_worker'
+Started GET "/Countries/index" for 127.0.0.1 at 2024-02-19 16:07:02 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/Countries/index"):
+  
+Started GET "/countries/index" for 127.0.0.1 at 2024-02-19 16:07:30 -0500
+Processing by CountriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering countries/index.html.erb within layouts/application
+  Rendered countries/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 130)
+  Rendered layout layouts/application.html.erb (Duration: 260.6ms | Allocations: 36316)
+Completed 200 OK in 300ms (Views: 279.8ms | ActiveRecord: 0.0ms | Allocations: 39456)
+
+
+Started GET "/countries/index" for 127.0.0.1 at 2024-02-19 16:18:56 -0500
+Processing by CountriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering countries/index.html.erb within layouts/application
+  Rendered countries/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 142)
+  Rendered layout layouts/application.html.erb (Duration: 117.3ms | Allocations: 20117)
+Completed 200 OK in 126ms (Views: 123.4ms | ActiveRecord: 0.0ms | Allocations: 21450)
+
+
+Started GET "/countries/index" for 127.0.0.1 at 2024-02-19 16:37:24 -0500
+Processing by CountriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering countries/index.html.erb within layouts/application
+  Rendered countries/index.html.erb within layouts/application (Duration: 23.4ms | Allocations: 4656)
+  Rendered layout layouts/application.html.erb (Duration: 24.8ms | Allocations: 4739)
+Completed 500 Internal Server Error in 346ms (ActiveRecord: 0.0ms | Allocations: 8166)
+
+
+  
+ActionView::Template::Error (undefined method `countries_show_path' for #<ActionView::Base:0x000000000117d8>
+Did you mean?  countries_index_path):
+    15:       <td><%= country['region'] %></td>
+    16:       <td><%= country['area'] %></td>
+    17:       <td><%= country['population'] %></td>
+    18:       <td><%= link_to( 'More', countries_show_path(name: country['name']['common']) ) %></td>
+    19:     </tr>
+    20:   <% end %>
+    21: </table>
+  
+app/views/countries/index.html.erb:18
+app/views/countries/index.html.erb:11
+Started GET "/countries/index" for 127.0.0.1 at 2024-02-19 16:40:28 -0500
+Processing by CountriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering countries/index.html.erb within layouts/application
+  Rendered countries/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 670)
+  Rendered layout layouts/application.html.erb (Duration: 192.6ms | Allocations: 22427)
+Completed 200 OK in 446ms (Views: 202.4ms | ActiveRecord: 0.0ms | Allocations: 25285)
+
+
+Started GET "/countries/index" for 127.0.0.1 at 2024-02-19 16:41:48 -0500
+Processing by CountriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering countries/index.html.erb within layouts/application
+  Rendered countries/index.html.erb within layouts/application (Duration: 19.7ms | Allocations: 2965)
+  Rendered layout layouts/application.html.erb (Duration: 20.5ms | Allocations: 3048)
+Completed 500 Internal Server Error in 286ms (ActiveRecord: 0.0ms | Allocations: 5879)
+
+
+  
+ActionView::Template::Error (The asset "🇮🇩" is not present in the asset pipeline.
+):
+     7:  </tr>
+     8:   <% @countries.each do |country| %>
+     9:     <tr class="<%= cycle('even', 'odd') %>">
+    10:       <td><%= image_tag(country['flag'], style: 'width: 200px') %></td>
+    11:       <td><%= country['name'] %></td>
+    12:       <td><%= country['capital'] %></td>
+    13:     </tr>
+  
+app/views/countries/index.html.erb:10
+app/views/countries/index.html.erb:8
+Started GET "/countries/index" for 127.0.0.1 at 2024-02-19 16:45:56 -0500
+Processing by CountriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering countries/index.html.erb within layouts/application
+  Rendered countries/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 8971)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 9054)
+Completed 500 Internal Server Error in 381ms (ActiveRecord: 0.0ms | Allocations: 11896)
+
+
+  
+ActionView::Template::Error (The asset "🇨🇾" is not present in the asset pipeline.
+):
+     6:     <th>Capital</th>
+     7:  </tr>
+     8:   <% @countries.each do |country| %>
+     9:       <td><%= image_tag(country['flag'], style: 'width: 200px') %></td>
+    10:       <td><%= country['name'] %></td>
+    11:       <td><%= country['capital'] %></td>
+    12:     </tr>
+  
+app/views/countries/index.html.erb:9
+app/views/countries/index.html.erb:8
+Started GET "/countries/index" for 127.0.0.1 at 2024-02-19 16:46:50 -0500
+Processing by CountriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering countries/index.html.erb within layouts/application
+  Rendered countries/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1312)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 1395)
+Completed 500 Internal Server Error in 157ms (ActiveRecord: 0.0ms | Allocations: 3706)
+
+
+  
+ActionView::Template::Error (Nil location provided. Can't build URI.):
+     6:     <th>Capital</th>
+     7:  </tr>
+     8:   <% @countries.each do |country| %>
+     9:       <td><%= image_tag(country['flag'], style: 'width: 200px') %></td>
+    10:       <td><%= country['name'] %></td>
+    11:       <td><%= country['capital'] %></td>
+    12:     </tr>
+  
+app/views/countries/index.html.erb:9
+app/views/countries/index.html.erb:8
+Started GET "/countries/index" for 127.0.0.1 at 2024-02-19 16:48:21 -0500
+Processing by CountriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering countries/index.html.erb within layouts/application
+  Rendered countries/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 318)
+  Rendered layout layouts/application.html.erb (Duration: 75.9ms | Allocations: 17154)
+Completed 200 OK in 227ms (Views: 89.2ms | ActiveRecord: 0.0ms | Allocations: 19397)
+
+
+Started GET "/countries/index" for 127.0.0.1 at 2024-02-19 16:48:25 -0500
+Processing by CountriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering countries/index.html.erb within layouts/application
+  Rendered countries/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 54)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 1538)
+Completed 200 OK in 107ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 2525)
+
+
+Started GET "/countries/index" for 127.0.0.1 at 2024-02-19 16:48:43 -0500
+Processing by CountriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering countries/index.html.erb within layouts/application
+  Rendered countries/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 313)
+  Rendered layout layouts/application.html.erb (Duration: 55.3ms | Allocations: 17056)
+Completed 200 OK in 184ms (Views: 66.8ms | ActiveRecord: 0.0ms | Allocations: 19292)
+
+
+Started GET "/countries/index" for 127.0.0.1 at 2024-02-19 16:52:04 -0500
+Processing by CountriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering countries/index.html.erb within layouts/application
+  Rendered countries/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1270)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 1353)
+Completed 500 Internal Server Error in 265ms (ActiveRecord: 0.0ms | Allocations: 4127)
+
+
+  
+ActionView::Template::Error (no implicit conversion of String into Integer):
+     8:   <% @countries.each do |country| %>
+     9:       <td></td>
+    10:       <%# <%= image_tag(country['flag'], style: 'width: 200px') %> 
+    11:       <td><%= country['name'] %></td>
+    12:       <td><%= country['capital'] %></td>
+    13:     </tr>
+    14:   <% end %>
+  
+app/views/countries/index.html.erb:11:in `[]'
+app/views/countries/index.html.erb:11
+app/views/countries/index.html.erb:8
+Started GET "/countries/index" for 127.0.0.1 at 2024-02-19 16:55:36 -0500
+Processing by CountriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering countries/index.html.erb within layouts/application
+  Rendered countries/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 559)
+  Rendered layout layouts/application.html.erb (Duration: 68.1ms | Allocations: 17444)
+Completed 200 OK in 424ms (Views: 75.1ms | ActiveRecord: 0.0ms | Allocations: 20279)
+
+
+Started GET "/countries/index" for 127.0.0.1 at 2024-02-19 16:55:38 -0500
+Processing by CountriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering countries/index.html.erb within layouts/application
+  Rendered countries/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 286)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 1769)
+Completed 200 OK in 287ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 3296)
+
+
+Started GET "/countries/index" for 127.0.0.1 at 2024-02-19 16:55:58 -0500
+Processing by CountriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering countries/index.html.erb within layouts/application
+  Rendered countries/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 285)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 1769)
+Completed 200 OK in 316ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 3173)
+
+
+Started GET "/countries/index" for 127.0.0.1 at 2024-02-19 16:56:03 -0500
+Processing by CountriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering countries/index.html.erb within layouts/application
+  Rendered countries/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 285)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 1754)
+Completed 200 OK in 268ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 3155)
+
+
+Started GET "/countries/index" for 127.0.0.1 at 2024-02-19 16:56:56 -0500
+Processing by CountriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering countries/index.html.erb within layouts/application
+  Rendered countries/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1264)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 1347)
+Completed 500 Internal Server Error in 251ms (ActiveRecord: 0.0ms | Allocations: 4124)
+
+
+  
+ActionView::Template::Error (no implicit conversion of String into Integer):
+     8:   <% @countries.each do |country| %>
+     9:       <td></td>
+    10:       <%# <%= image_tag(country['flag'], style: 'width: 200px') %> 
+    11:       <td><%= country['name'] %></td>
+    12:       <td><%= country['capital'] %></td>
+    13:     </tr>
+    14:   <% end %>
+  
+app/views/countries/index.html.erb:11:in `[]'
+app/views/countries/index.html.erb:11
+app/views/countries/index.html.erb:8
+Started GET "/countries/index" for 127.0.0.1 at 2024-02-19 16:59:06 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CountriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering countries/index.html.erb within layouts/application
+  Rendered countries/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1471)
+  Rendered layout layouts/application.html.erb (Duration: 428.1ms | Allocations: 46622)
+Completed 200 OK in 816ms (Views: 440.9ms | ActiveRecord: 0.0ms | Allocations: 55673)
+
+
+Started GET "/countries/index" for 127.0.0.1 at 2024-02-19 16:59:44 -0500
+Processing by CountriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering countries/index.html.erb within layouts/application
+  Rendered countries/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 596)
+  Rendered layout layouts/application.html.erb (Duration: 49.3ms | Allocations: 17362)
+Completed 200 OK in 380ms (Views: 63.4ms | ActiveRecord: 0.0ms | Allocations: 20147)
+
+
+Started GET "/countries/index" for 127.0.0.1 at 2024-02-19 17:08:56 -0500
+Processing by CountriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering countries/index.html.erb within layouts/application
+  Rendered countries/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 319)
+  Rendered layout layouts/application.html.erb (Duration: 63.9ms | Allocations: 17129)
+Completed 200 OK in 224ms (Views: 71.4ms | ActiveRecord: 0.0ms | Allocations: 19473)
+
+
+Started GET "/countries/index" for 127.0.0.1 at 2024-02-19 17:08:59 -0500
+Processing by CountriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering countries/index.html.erb within layouts/application
+  Rendered countries/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 54)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 1529)
+Completed 200 OK in 107ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 2528)
+
+
+Started GET "/countries/index" for 127.0.0.1 at 2024-02-19 17:09:00 -0500
+Processing by CountriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering countries/index.html.erb within layouts/application
+  Rendered countries/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 54)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 1530)
+Completed 200 OK in 124ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 2438)
+
+
+Started GET "/countries/index" for 127.0.0.1 at 2024-02-19 17:09:00 -0500
+Processing by CountriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering countries/index.html.erb within layouts/application
+  Rendered countries/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 54)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 1532)
+Completed 200 OK in 116ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 2434)
+
+
+Started GET "/countries/index" for 127.0.0.1 at 2024-02-19 17:09:01 -0500
+Processing by CountriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering countries/index.html.erb within layouts/application
+  Rendered countries/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 54)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 1544)
+Completed 200 OK in 135ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 2446)
+
+
+Started GET "/countries/index" for 127.0.0.1 at 2024-02-19 17:09:01 -0500
+Processing by CountriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering countries/index.html.erb within layouts/application
+  Rendered countries/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 54)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 1538)
+Completed 200 OK in 108ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 2440)
+
+
+Started GET "/countries/index" for 127.0.0.1 at 2024-02-19 17:11:08 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CountriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering countries/index.html.erb within layouts/application
+  Rendered countries/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 437)
+  Rendered layout layouts/application.html.erb (Duration: 293.2ms | Allocations: 41391)
+Completed 200 OK in 440ms (Views: 306.7ms | ActiveRecord: 0.0ms | Allocations: 49697)
+
+
